@@ -2,10 +2,6 @@
   padding: 0;
   margin: 0;
 }
-
-.Container{
-  display: flex;
-}
 .Form{
     display: flex;
     justify-content: center;

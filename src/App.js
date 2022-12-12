@@ -1,16 +1,18 @@
-import LoginImage from './Images/Login.jpg';
-import styles from './Styling/App.module.css'
-import LoginForm from './components/LoginForm';
-import SignupForm from './components/SignupForm'
+import LoginPage from "./Pages/LoginPage";
+import SignupPage from "./Pages/SignupPage";
+import {
+  BrowserRouter,
+  Routes,
+  Route,
+} from "react-router-dom";
 
 export default function App(){
   return (
-    <div className={styles.Container}>
-        <img className={styles.Image} src={LoginImage} alt="LoginImage" />
-        <div className={styles.Form}>
-          {/* <LoginForm></LoginForm> */}
-          <SignupForm></SignupForm>
-        </div>
-    </div>
+    <BrowserRouter>
+    <Routes>
+      <Route path="/" element={<SignupPage />} />
+      <Route path="/login" element={<LoginPage />} />
+    </Routes>
+  </BrowserRouter>
   );
 };

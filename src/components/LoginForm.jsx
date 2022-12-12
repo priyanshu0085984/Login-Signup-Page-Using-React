@@ -1,5 +1,5 @@
 import styles from '../Styling/Form.module.css'
-
+import { Link } from 'react-router-dom';
 export default function LoginForm(){
     return (
         <div className={styles.container}>
@@ -19,6 +19,7 @@ export default function LoginForm(){
                 </div>
             </div>
             <button className={styles.button}>Login</button>
+            <p>New User? <Link to='/'>Register Here</Link></p>
         </div>
     )
 }

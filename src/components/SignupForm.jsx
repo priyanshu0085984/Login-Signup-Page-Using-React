@@ -1,6 +1,20 @@
 import styles from '../Styling/Form.module.css'
-
+import { Link } from 'react-router-dom'
 export default function signupForm(){
+
+
+    // const [user, setUser] = useState({
+    //     name: "", email: "", phone:"", work: "", password: "", cpassword: ""
+    // });
+    // let name, value;
+    // const handleInputs = (e)=>{
+    //     console.log(e);
+    //     name = e.target.name;
+    //     value = e.target.value;
+    //     setUser({ ... user, [name]:value});
+    // }
+
+
     return (
         <div className={styles.container}>
             <h2>Welcome</h2>
@@ -22,7 +36,8 @@ export default function signupForm(){
                     <input type='checkbox' />
                 </div>
             </div>
-            <button className={styles.button}>Login</button>
+            <button className={styles.button}>Signup</button>
+            <p>Already have an Account? <Link to="/login">Sign in</Link></p>
         </div>
     )
 }
