@@ -1,0 +1,33 @@
+.container{
+    height: 100%;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.innerContainer{
+    display: flex;
+    flex-direction: column;
+}
+.fields{
+    margin: 1em;
+    padding: auto;
+}
+.input{
+    height: 2rem;
+    width: 15rem;
+    border: 1px solid black;
+}
+.emailLabel{
+    margin-right: 2rem;
+}
+.button{
+    height: 2rem;
+    width: 6rem;
+    font-size: larger;
+    font-weight: bold;
+}
+.NameLabel{
+    margin-right: 1.6rem;
+}
